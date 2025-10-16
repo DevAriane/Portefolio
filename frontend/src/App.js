@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";     
+import Technology from "./Components/Technology";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Navbar />
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
         <Hero />
+      </motion.div>
+        <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 0.8 }}>
+        <Technology/>
       </motion.div>
       <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} transition={{ duration: 0.8 }}>
         <Projects />
