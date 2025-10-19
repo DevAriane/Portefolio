@@ -17,6 +17,8 @@ export default function Footer() {
         transition={{ duration: 0.3 }}
         className="text-sm tracking-wide"
       >
+
+       
         © 2025 <span className="font-semibold">Ariane</span>. Tous droits réservés.
       </motion.p>
     </motion.footer>

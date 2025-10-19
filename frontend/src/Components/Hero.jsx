@@ -17,7 +17,7 @@ export default function Hero() {
   <img
     src="./ariane.png"
     alt="Ariane"
-    className="w-3/4 md:w-2/3 lg:w-1/2 h-auto rounded-full shadow-lg"
+    className="scheme-light backdrop-saturate-<number> w-3/4 md:w-2/3 lg:w-1/2 h-auto rounded-full shadow-lg"
   />
 </motion.div>
 
