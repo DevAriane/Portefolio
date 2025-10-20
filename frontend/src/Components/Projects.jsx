@@ -5,28 +5,31 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   // Remplace l'URL par celle de ton API Laravel
-  //   fetch("http://localhost:8000/api/projects")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setProjects(data);
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.error("Erreur récupération projects :", err);
-  //       setLoading(false);
-  //     });
-  // }, []);
+  useEffect(() => {
+    // Remplace l'URL par celle de ton API Laravel
+    fetch("http://192.168.140.191:8000/api/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data);
+        console.log("Projects récupérés :", data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Erreur récupération projects :", err);
+        setLoading(false);
+      });
+  }, []);
 
-  // if (loading) {
-  //   return (
-  //     <section id="projects" className="py-20 px-8 bg-black text-white text-center">
-  //       <h2 className="text-3xl font-bold mb-6">Mes Projets</h2>
-  //       <p>Chargement des projets...</p>
-  //     </section>
-  //   );
-  // }
+  console.log("Rendering Projects with data:", projects);
+
+  if (loading) {
+    return (
+      <section id="projects" className="py-20 px-8 bg-black text-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Mes Projets</h2>
+        <p>Chargement des projets...</p>
+      </section>
+    );
+  }
 
   return (
     <section id="projects" className="py-20 px-8 bg-black text-white">
