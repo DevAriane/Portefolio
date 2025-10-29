@@ -3,6 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
 
+use Illuminate\Http\Request;
+
+
+Route::get('/test', function () {
+    return response()->json(['message' => 'API fonctionne !']);
+});
+
+
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::post('/projects', [ProjectController::class, 'store']);
 Route::get('/projects/{id}', [ProjectController::class, 'show']);

@@ -13,7 +13,7 @@ class ProjectSeeder extends Seeder
             [
                 'title' => "Portfolio Personnel",
                 'description' => "Un portfolio personnel développé avec Laravel pour le backend et React.js pour le frontend. Il présente mes projets, compétences et expériences professionnelles. Le site est conçu pour être réactif et offre une navigation fluide, mettant en valeur mes réalisations de manière professionnelle.",
-                'image' => 'projects/portfolio.png',
+                'image' => '/portfolio.png',
                 'link' => '#',
                 'technologies' => json_encode(['Laravel', 'React.js', 'PHP']),
                 'qr_code' => null,
@@ -23,7 +23,7 @@ class ProjectSeeder extends Seeder
             [
                 'title' => "Design d'interfaces utilisateur pour une application de livraison de repas",
                 'description' => "Cette application de livraison de repas, conçue avec Laravel et React Native, permet aux utilisateurs de parcourir les menus, passer des commandes et suivre la livraison en temps réel. Elle offre une interface conviviale et des paiements sécurisés.",
-                'image' => 'projects/figma.png',
+                'image' => '/figma.png',
                 'link' => 'https://www.figma.com/design/imBqhcXpR77y0ZLemk71F8/Untitled?node-id=737-1179&t=SuoLaPjxgl5zpXqw-0',
                 'technologies' => json_encode(['Laravel', 'React Native', 'Tailwind CSS']),
                 'qr_code' => null,
