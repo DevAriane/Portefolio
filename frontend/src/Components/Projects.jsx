@@ -7,7 +7,7 @@ export default function Projects() {
 
   useEffect(() => {
     // Remplace l'URL par celle de ton API Laravel
-    fetch("http://192.168.140.191:8000/api/projects")
+    fetch("http://192.168.113.191:8000/api/projects")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
@@ -42,7 +42,7 @@ export default function Projects() {
         Mes Projets
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 margin-[50 px]" >
         {projects.map((project, i) => (
           <motion.a
             key={project.id}

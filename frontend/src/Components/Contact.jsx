@@ -22,7 +22,7 @@ export default function Contact() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-gray-300 mb-8 text-lg"
       >
-        Appelez-moi pour un travail <br /> <span className="font-semibold">📞   673-330-148</span>
+        Appelez-moi pour un travail <br /> <span className="font-semibold">📞   671-092-083</span>
       </motion.p>
 
       <motion.a
