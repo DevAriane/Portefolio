@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 
         // Exécuter le seeder des projets
         $this->call([
-            // ProjectSeeder::class,
+            //  ProjectSeeder::class,
         ]);
     }
 }

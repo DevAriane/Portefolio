@@ -32,6 +32,7 @@ class ProjectController extends Controller
                 'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
                 'link' => 'nullable|url',
                 'technologies' => 'nullable|array',
+                'type' => 'required|in:mobile,web',
             ]);
 
             // 📦 Upload image si fournie
@@ -86,6 +87,7 @@ class ProjectController extends Controller
                 'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
                 'link' => 'nullable|url',
                 'technologies' => 'nullable|array',
+                'type' => 'sometimes|in:mobile,web',
             ]);
 
             if ($request->hasFile('image')) {

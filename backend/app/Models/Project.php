@@ -13,10 +13,18 @@ class Project extends Model
     'link',
     'technologies',
     'qr_code',
+    'type',
 ];
 
 protected $casts = [
     'technologies' => 'array',
 ];
+
+// Dans ton modèle Project.php
+public function getImageAttribute($value)
+{
+    return $value ? asset($value) : null;
+}
+
 
 }
