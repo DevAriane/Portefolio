@@ -30,7 +30,7 @@ export default function About() {
             2023 - 2024
           </h3>
           <h4 className="text-xl font-bold mb-4">
-            Développeur Web Junior – KM Solutions Sarl
+            Développeur Frontend – KM Solutions Sarl
           </h4>
           <p className="text-gray-300 text-justify leading-relaxed mb-6">
             Participation active à la conception et au développement

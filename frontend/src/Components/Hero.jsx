@@ -29,7 +29,7 @@ export default function Hero() {
         <AnimatePresence mode="wait">
           <motion.img
             key={showFirst ? "first" : "second"}
-            src={showFirst ? "./IMG.jpg" : "./ariane.png"}
+            src={showFirst ? "./photo.png" : "./ariane.png"}
             alt="Ariane"
             className="absolute w-64 h-64 md:w-80 md:h-80 lg:w-[22rem] lg:h-[22rem] 
                        rounded-full object-cover shadow-[0_0_25px_rgba(255,255,255,0.2)]"
@@ -75,7 +75,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.a
-          href="/CV.pdf"
+          href="/ateumo.pdf"
           download="CV_Ariane.pdf"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

@@ -9,7 +9,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://192.168.113.191:8000/api/projects")
+    fetch("http://192.168.241.191:8000/api/projects")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);
@@ -114,7 +114,7 @@ export default function Projects() {
           
                <div className="flex-shrink-0 w-full md:w-1/6 flex flex-col items-center justify-center p-4">
     <QRCodeCanvas
-      value={project.link || "https://example.com"} // lien à transformer
+      value={project.link} // lien à transformer
       size={200} // taille du QR
       bgColor={"#000000"} // fond noir
       fgColor={"#ffffff"} // QR blanc
