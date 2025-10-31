@@ -36,7 +36,7 @@ class ProjectSeeder extends Seeder
                 'title' => "Mise en œuvre d'une application mobile de suivi des commandes et livraisons",
                 'description' => "Application mobile développée avec React Native et Firebase, permettant aux utilisateurs de suivre leurs commandes en temps réel et recevoir des notifications.",
                 'image' => '',
-                'link' => 'https://expo.dev/accounts/ariane_ateumo/projects/projet/builds/d5d1b01c-be06-420c-be5b-31abb69d10bf',
+                'link' => 'https://expo.dev/artifacts/eas/awbWGzD6uUpyEy3bZW4itr.aab',
                 'technologies' => json_encode(['React Native', 'Firebase', 'Javascript']),
                 'qr_code' => null,
                 'type' => 'mobile',
