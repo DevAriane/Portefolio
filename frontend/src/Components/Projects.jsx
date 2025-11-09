@@ -1,37 +1,52 @@
-import React, { useEffect, useState } from "react";
+
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { QRCodeCanvas } from "qrcode.react";
 
 
 export default function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+ 
 
-  useEffect(() => {
-    fetch("http://192.168.105.191:8000/api/projects")
-      .then((res) => res.json())
-      .then((data) => {
-        setProjects(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Erreur récupération projects :", err);
-        setLoading(false);
-      });
-  }, []);
 
-  if (loading) {
-    return (
-      <section
-        id="projects"
-        className="py-20 px-8 bg-black text-white text-center"
-      >
-        <h2 className="text-3xl font-bold mb-6">Mes Projets</h2>
-        <p>Chargement des projets...</p>
-      </section>
-    );
-  }
+   const projects = [
+    {
+      title: "Portfolio Personnel",
+      description:
+        "Un portfolio personnel développé avec Laravel pour le backend et React.js pour le frontend. Il présente mes projets, compétences et expériences professionnelles. Le site est conçu pour être réactif et offre une navigation fluide, mettant en valeur mes réalisations de manière professionnelle.",
+      image: "portefolio.png",
+      link: "https://www.figma.com/design/UTpANtegGgPOh0BL4577I6/...",
+      technologies: ["Laravel", "React.js", "PHP"],
+      type: "web",
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    {
+      title: "Design d'interfaces utilisateur pour une application de livraison de repas",
+      description:
+        "Cette application de livraison de repas, conçue avec Laravel et React Native, permet aux utilisateurs de parcourir les menus, passer des commandes et suivre la livraison en temps réel. Elle offre une interface conviviale et des paiements sécurisés.",
+      image: "figma.png",
+      link: "https://www.figma.com/design/imBqhcXpR77y0ZLemk71F8/...",
+      technologies: ["Laravel", "React Native", "Tailwind CSS"],
+      type: "web",
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    {
+      title: "Mise en œuvre d'une application mobile de suivi des commandes et livraisons",
+      description:
+        "Application mobile développée avec React Native et Firebase, permettant aux utilisateurs de suivre leurs commandes en temps réel et recevoir des notifications",
+      image: "",
+      link: "https://expo.dev/artifacts/eas/awbWGzD6uUpyEy3bZW4itr.aab",
+      technologies: ["React Native", "Firebase", "Javascript"],
+      type: "mobile",
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+  ];
+
+console.log("Projets chargés :", projects);
+
+  
 
   return (
     <section id="projects" className="py-20 px-8 bg-black text-white">

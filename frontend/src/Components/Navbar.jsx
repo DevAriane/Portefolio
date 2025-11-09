@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-import { AiFillLinkedin, AiOutlineGooglePlus } from "react-icons/ai";
+import { AiFillLinkedin} from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
-import { BsWhatsapp } from 'react-icons/bs';
+
 
 export default function Navbar() {
   return (
