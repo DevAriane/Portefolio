@@ -75,7 +75,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.a
-          href="/ateumo.pdf"
+          href="/ariane_cv.pdf"
           download="CV_Ariane.pdf"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

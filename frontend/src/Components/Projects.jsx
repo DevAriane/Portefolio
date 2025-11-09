@@ -9,7 +9,7 @@ export default function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://192.168.241.191:8000/api/projects")
+    fetch("http://192.168.105.191:8000/api/projects")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);

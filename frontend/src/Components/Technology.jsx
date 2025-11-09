@@ -68,6 +68,11 @@ export default function Technology() {
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
+    {
+      name: "Node.js",
+      link: "https://nodejs.org/",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    }
   ];
 
   return (
