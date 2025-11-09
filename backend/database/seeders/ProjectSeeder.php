@@ -14,7 +14,7 @@ class ProjectSeeder extends Seeder
                 'title' => "Portfolio Personnel",
                 'description' => "Un portfolio personnel développé avec Laravel pour le backend et React.js pour le frontend. Il présente mes projets, compétences et expériences professionnelles. Le site est conçu pour être réactif et offre une navigation fluide, mettant en valeur mes réalisations de manière professionnelle.",
                 'image' => 'portefolio.png',
-                'link' => '#',
+                'link' => 'https://www.figma.com/design/UTpANtegGgPOh0BL4577I6/Untitled?node-id=0-1&p=f&t=yxyqAsmNrBeutTZn-0',
                 'technologies' => json_encode(['Laravel', 'React.js', 'PHP']),
                 'qr_code' => null,
                 'type' => 'web',
