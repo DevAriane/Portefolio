@@ -31,17 +31,17 @@ export default function Projects() {
       created_at: new Date(),
       updated_at: new Date(),
     },
-    {
-      title: "Mise en œuvre d'une application mobile de suivi des commandes et livraisons",
-      description:
-        "Application mobile développée avec React Native et Firebase, permettant aux utilisateurs de suivre leurs commandes en temps réel et recevoir des notifications",
-      image: "",
-      link: "https://expo.dev/artifacts/eas/awbWGzD6uUpyEy3bZW4itr.aab",
-      technologies: ["React Native", "Firebase", "Javascript"],
-      type: "mobile",
-      created_at: new Date(),
-      updated_at: new Date(),
-    },
+    // {
+    //   title: "Mise en œuvre d'une application mobile de suivi des commandes et livraisons",
+    //   description:
+    //     "Application mobile développée avec React Native et Firebase, permettant aux utilisateurs de suivre leurs commandes en temps réel et recevoir des notifications",
+    //   image: "",
+    //   link: "https://expo.dev/artifacts/eas/awbWGzD6uUpyEy3bZW4itr.aab",
+    //   technologies: ["React Native", "Firebase", "Javascript"],
+    //   type: "mobile",
+    //   created_at: new Date(),
+    //   updated_at: new Date(),
+    // },
   ];
 
 console.log("Projets chargés :", projects);
