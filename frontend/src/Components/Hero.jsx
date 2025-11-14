@@ -19,7 +19,8 @@ export default function Hero() {
     >
       {/* 📸 IMAGE */}
       <motion.div
-        className="w-full md:w-1/2 flex justify-center items-center relative mb-10 md:mb-0"
+        className="w-full md:w-1/2 flex justify-center items-center relative 
+                   mt-20 md:mt-0 mb-10 md:mb-0"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}

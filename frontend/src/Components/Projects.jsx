@@ -14,7 +14,7 @@ export default function Projects() {
       description:
         "Un portfolio personnel développé avec Laravel pour le backend et React.js pour le frontend. Il présente mes projets, compétences et expériences professionnelles. Le site est conçu pour être réactif et offre une navigation fluide, mettant en valeur mes réalisations de manière professionnelle.",
       image: "portefolio.png",
-      link: "https://www.figma.com/design/UTpANtegGgPOh0BL4577I6/...",
+      link: "https://portefolio-dev-juanita-7zhpu07ik-juanitas-projects-55b2ed74.vercel.app",
       technologies: ["Laravel", "React.js", "PHP"],
       type: "web",
       created_at: new Date(),
